@@ -19,8 +19,7 @@ class BilibiliVideo(object):
         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
         'Referer': 'https://www.bilibili.com'  # bilibili新的反爬机制，需要设置Referer为bilibili主站
     }
-    cookie = {
-        'Cookie': '''i-wanna-go-back=-1; buvid_fp_plain=undefined; SESSDATA=fb6e516d,1671985500,565a0*61; bili_jct=fd2887b95afc46a2a4e7fc58fd7fd756; DedeUserID=52750318; DedeUserID__ckMd5=8c7b267b76a912e4; blackside_state=0; CURRENT_BLACKGAP=0; rpdid=|(J|YumYumml0J'uYlYRJJlkY; LIVE_BUVID=AUTO3016564784976752; b_ut=5; hit-dyn-v2=1; nostalgia_conf=-1; _uuid=1CD98563-3B1D-DC4A-6A8C-1185110EAE36885262infoc; b_nut=1658219185; buvid3=A0423850-F2DE-EDAA-54DF-96DBBC26EBF685732infoc; buvid4=75469809-4201-9788-917E-138AC79A384385732-022071916-cqBLdk3Jccw2jjiQow9BOQ==; fingerprint=fca57e62cfeed3d3073a47d66a6e0d47; sid=7z3j1e0i; buvid_fp=2de6d08901548664c0e846f257cd3a23; is-2022-channel=1; CURRENT_QUALITY=112; PVID=3; theme_style=light; bp_video_offset_52750318=692028766166188000; innersign=1; b_timer={"ffp":{"333.1007.fp.risk_A0423850":"1827D916B38","333.1193.fp.risk_A0423850":"1827D916B9A","333.788.fp.risk_A0423850":"1827D9E52B5"}}; b_lsid=EE95A63F_1827DA5A287; CURRENT_FNVAL=4048'''}
+    cookie = { 'Cookie': '''填入你的COOKIE''' }
     s = requests.session()
 
     # 第一次实例化时需要传入COOKIE，不然为空
